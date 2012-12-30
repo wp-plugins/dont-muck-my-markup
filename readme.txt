@@ -28,6 +28,6 @@ We hope you use and enjoy __Don't Muck My Markup__ as much as we do.
 1. Upload this plugin to your plugins directory (wp-content/plugins/). 
 2. Activate this plugin.
 3. Head over to the Edit Post interface for the specific page for which you want to disable WordPress' auto-formatting. 
-4. In the right sidebar underneath the "Featured Image" box, toggle the checkbox labled, "Disable auto-formatting for this page/post."
+4. In the right sidebar underneath the "Featured Image" box, toggle the checkbox labeled, "Disable auto-formatting for this page/post."
 5. Update the page/post.
 6. Enjoy your newfound control! 
