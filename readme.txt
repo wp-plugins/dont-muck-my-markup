@@ -13,10 +13,10 @@ If you've ever had a WordPress blog post or page in which you found yourself wri
 
 Up until now, we've only had a couple of options:
 
-- First, we could use conditional logic to require an expernal PHP file. This was bad for several reasons. 
+- First, we could use conditional logic to require an external PHP file. This was bad for several reasons. 
 	- It's not friendly for the end user. Who wants to have to edit a PHP file?
 	- The content is not in the WordPress database, which means it isn't searchable inside the dashboard, and it isn't backed up with the rest of the site.
-	- It removes framework functionality. Robust WordPress frameworks have places to add content above and below the main post content area, and an external PHP file destorys this greatly.
+	- It removes framework functionality. Robust WordPress frameworks have places to add content above and below the main post content area, and an external PHP file destroys this greatly.
 - The second option is to use the existing plugins to disable WordPress formatting, but none of these plugins empower the user to toggle this setting on a page-by-page basis. After all, most articles don't have that much `HTML` in them. Nobody wants to go through 500 old blog posts and manually add `<p>` tags to them, do they? We didn't think so either.
 
 As a design agency that's used WordPress for several years, we finally decided these shenanigans had to stop once and for good. We built a simple but elegant plugin that lets you disable auto-generated HTML on a page-by-page basis.
