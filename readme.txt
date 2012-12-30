@@ -1,7 +1,7 @@
 === Don't Muck My Markup ===
 Contributors: Martyn Chamberlin
 Tags: remove-markup, disable-auto-formatting, default-formatting
-Requires at least 3.0
+Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: 1.0
 
