@@ -22,7 +22,7 @@ Class Admin extends DMMM
 	function view()
 	{
 		// Outputs the checkbox form control on each page and post
-		$output = '<input type="checkbox" name="dont_muck" id="dont_muck_chbx"' .  (self::checked() ? 'checked="checked"' : '') . '/><label for="dont_muck_chbx">Disable auto-formatting for this ' . get_post_type();
+		$output = '<input type="checkbox" name="dont_muck" id="dont_muck_chbx"' .  (self::checked() ? ' checked="checked"' : '') . '/><label for="dont_muck_chbx">Disable auto-formatting for this ' . get_post_type();
 		echo $output;
 	}
 

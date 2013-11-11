@@ -31,3 +31,9 @@ We hope you use and enjoy __Don't Muck My Markup__ as much as we do.
 4. In the right sidebar underneath the "Featured Image" box, toggle the checkbox labeled, "Disable auto-formatting for this page/post."
 5. Update the page/post.
 6. Enjoy your newfound control! 
+
+== Changlong ==
+
+1.1
+- Bugfixes
+	- Added white space so that checked="checked" should no longer be buggy
