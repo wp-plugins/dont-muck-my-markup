@@ -32,8 +32,9 @@ We hope you use and enjoy __Don't Muck My Markup__ as much as we do.
 5. Update the page/post.
 6. Enjoy your newfound control! 
 
-== Changlong ==
+== Changelog ==
 
 1.1
+
 - Bugfixes
 	- Added white space so that checked="checked" should no longer be buggy
