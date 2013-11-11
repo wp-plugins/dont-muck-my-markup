@@ -3,7 +3,7 @@ Contributors: Martyn Chamberlin
 Tags: remove-markup, disable-auto-formatting, default-formatting
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.0
+Stable tag: 1.1
 
 Don't Muck My Markup lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis.
 
