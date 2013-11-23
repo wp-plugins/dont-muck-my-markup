@@ -3,7 +3,7 @@ Contributors: Martyn Chamberlin
 Tags: remove-markup, disable-auto-formatting, default-formatting
 Requires at least: 3.0
 Tested up to: 3.7.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 Don't Muck My Markup lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis.
 
@@ -37,3 +37,7 @@ We hope you use and enjoy __Don't Muck My Markup__ as much as we do.
 #### 1.1
 - Bugfixes
 	- Added white space so that checked="checked" should no longer be buggy
+
+#### 1.2
+- Bugfixes
+	- Discovered that autosaving was what messed everything up. When a post autosaves, custom meta boxes get reset unless you provision this. Finally bug free. 

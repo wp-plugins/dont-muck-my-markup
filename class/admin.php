@@ -28,6 +28,9 @@ Class Admin extends DMMM
 
 	function save( $post_id )
 	{
+		 if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
+		 	return $post_id;
+
 			update_post_meta( $post_id, '_dont_muck', isset( $_POST['dont_muck'] ) ? true : '' );
 	}
 
