@@ -1,9 +1,9 @@
 === Don't Muck My Markup ===
 Contributors: Martyn Chamberlin
 Tags: remove-markup, disable-auto-formatting, default-formatting
-Requires at least: 3.0
-Tested up to: 3.7.1
-Stable tag: 1.2
+Requires at least: 3.9
+Tested up to: 3.9.1
+Stable tag: 1.3
 
 Don't Muck My Markup lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis.
 
@@ -19,9 +19,11 @@ Up until now, we've only had a couple of options:
 	- It removes framework functionality. Robust WordPress frameworks have places to add content above and below the main post content area, and an external PHP file destroys this greatly.
 - The second option is to use the existing plugins to disable WordPress formatting, but none of these plugins empower the user to toggle this setting on a page-by-page basis. After all, most articles don't have that much `HTML` in them. Nobody wants to go through 500 old blog posts and manually add `<p>` tags to them, do they? We didn't think so either.
 
-As a design agency that's used WordPress for several years, we finally decided these shenanigans had to stop once and for good. We built a simple but elegant plugin that lets you disable auto-generated HTML on a page-by-page basis.
+As a web designer that's used WordPress successfully for several years, I finally decided these shenanigans had to stop once and for good. I built a simple but elegant plugin that lets you disable auto-generated HTML on a page-by-page basis. 
 
-We hope you use and enjoy __Don't Muck My Markup__ as much as we do.
+I hope you use and enjoy __Don't Muck My Markup__ as much as I enjoyed building it. 
+
+*Note: this plugin does not work on all WordPress themes, because some themes don’t handle the filter sequence correctly. This plugin __does__ work for well-programmed themes such as the Twenty Fourteen theme and the Genesis Framework (and child themes).*
 
 == Installation ==
 
@@ -41,3 +43,9 @@ We hope you use and enjoy __Don't Muck My Markup__ as much as we do.
 #### 1.2
 - Bugfixes
 	- Discovered that autosaving was what messed everything up. When a post autosaves, custom meta boxes get reset unless you provision this. Finally bug free. 
+
+#### 1.3
+- Buxfixes
+	- Updated function as static in main file.
+	- Checked for is_post() before getting post ID to determine if a given page load should be un-mucked or not.
+	- Update the description because parts of it were sounding a little archaic. 

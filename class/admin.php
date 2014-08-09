@@ -43,11 +43,13 @@ Class Admin extends DMMM
 	static function checked()
 	{
 		// We're not "caching" this in a static property because this method will be called potentially multiple times throughout the loop
-		$checked = get_post_meta( get_the_ID(), '_dont_muck', true);
-		if ( empty( $checked ) )
-			return false;
-		else
-			return true;
+		if ( get_post() )
+		{
+			$checked = get_post_meta( get_the_ID(), '_dont_muck', true);
+			if ( ! empty( $checked ) )
+				return true;
+		}
+		return false;
 	}
 }
 
