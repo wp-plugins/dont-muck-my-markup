@@ -5,7 +5,7 @@ Requires at least: 3.9
 Tested up to: 4.2.4
 Stable tag: 1.4
 
-Don't Muck My Markup lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis while keeping your shortcodes intact.
+Don't Muck My Markup lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis.
 
 == Description ==
 
