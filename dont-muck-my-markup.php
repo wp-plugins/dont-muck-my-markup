@@ -2,9 +2,9 @@
 /*
 Plugin Name: Don’t Muck My Markup
 plugin uri: http://wordpress.org/extend/plugins/dont-muck-my-markup/
-description: A necessity for any serious web designer, this plugin lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis. When activated, you'll find a little checkbox in the right sidebar of each Edit Post/Page interface. 
-version: 1.3
-author: Perfection Coding, LLC
+description: A necessity for any serious web designer, this plugin lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis while keeping your shortcodes in tact. When activated, you'll find a little checkbox in the right sidebar of each Edit Post/Page interface. 
+version: 1.4
+author: Martyn Chamberlin
 author uri: http://perfectioncoding.com
 license: gplv3
 */
@@ -50,3 +50,12 @@ Class DMMM
 */
 
 DMMM::initializeComponent();
+
+function dmmm_add_settings_link( $links ) {
+    $settings_link = '<a href="tools.php?page=dont-muck-my-markup">' . __( 'Settings' ) . '</a>';
+    array_unshift( $links, $settings_link );
+  	return $links;
+}
+$plugin = plugin_basename( __FILE__ );
+add_filter( "plugin_action_links_$plugin", 'dmmm_add_settings_link', 0 );
+

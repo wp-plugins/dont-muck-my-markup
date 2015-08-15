@@ -1,11 +1,11 @@
 === Don't Muck My Markup ===
 Contributors: Martyn Chamberlin
-Tags: remove-markup, disable-auto-formatting, default-formatting
+Tags: remove markup, disable auto formatting, default formatting, wpautop
 Requires at least: 3.9
-Tested up to: 3.9.1
-Stable tag: 1.3
+Tested up to: 4.2.4
+Stable tag: 1.4
 
-Don't Muck My Markup lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis.
+Don't Muck My Markup lets you disable all auto-generated HTML markup from your posts and pages on a page-by-page basis while keeping your shortcodes intact.
 
 == Description ==
 
@@ -32,20 +32,26 @@ I hope you use and enjoy __Don't Muck My Markup__ as much as I enjoyed building 
 3. Head over to the Edit Post interface for the specific page for which you want to disable WordPress' auto-formatting. 
 4. In the right sidebar underneath the "Featured Image" box, toggle the checkbox labeled, "Disable auto-formatting for this page/post."
 5. Update the page/post.
-6. Enjoy your newfound control! 
+6. To disable formatting across all pages and posts, head over to Tools -> Don’t Muck My Markup.
+7. Enjoy your newfound control! 
 
 == Changelog ==
 
-#### 1.1
-- Bugfixes
-	- Added white space so that checked="checked" should no longer be buggy
 
-#### 1.2
-- Bugfixes
-	- Discovered that autosaving was what messed everything up. When a post autosaves, custom meta boxes get reset unless you provision this. Finally bug free. 
+= 1.4 =
+- Adding a new feature that allows users to disable auto formatting across their entire site with the click of a button.
 
-#### 1.3
+
+= 1.3 =
 - Buxfixes
 	- Updated function as static in main file.
 	- Checked for is_post() before getting post ID to determine if a given page load should be un-mucked or not.
 	- Update the description because parts of it were sounding a little archaic. 
+
+= 1.2 =
+- Bugfixes
+	- Discovered that autosaving was what messed everything up. When a post autosaves, custom meta boxes get reset unless you provision this. Finally bug free. 
+
+= 1.1 =
+- Bugfixes
+	- Added white space so that checked="checked" should no longer be buggy
